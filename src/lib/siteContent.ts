@@ -115,7 +115,7 @@ export const siteContent = {
     },
     closing: {
       title: 'Dacă site-ul actual arată bine doar în screenshot-uri, nu și în conversațiile de vânzare, e momentul pentru o versiune mai matură.',
-      body: 'Refacem mesajul, curățăm structura și construim o experiență care susține decizia, nu doar impresia inițială.',
+      body: 'Clarificăm mesajul, ordonăm structura și construim o experiență care susține decizia, nu doar prima impresie.',
       primaryCta: { label: 'Vorbește cu noi', to: '/contact' },
     },
   },
@@ -172,7 +172,7 @@ export const siteContent = {
       },
       {
         question: 'Puteți lucra peste un site existent?',
-        answer: 'Da. În unele cazuri are sens un refactor iterativ, iar în altele e mai eficient să reconstruim zonele-cheie pe un sistem nou. Alegerea depinde de structură, conținut și nivelul actual de complexitate.',
+        answer: 'Da. În unele cazuri are sens o optimizare etapizată a site-ului existent, iar în altele este mai eficient să reconstruim zonele-cheie pe un sistem nou. Alegerea depinde de structură, conținut și nivelul actual de complexitate.',
       },
       {
         question: 'Ce primiți de la noi la început?',
@@ -250,8 +250,8 @@ export const siteContent = {
       body: 'BBL Sites este un studio orientat spre website-uri de prezentare și experiențe digitale unde tonul, ierarhia și detaliul trebuie să transmită maturitate, nu doar tendințe de moment.',
     },
     story: [
-      'Am pornit din nevoia de a construi site-uri care să arate bine, dar mai ales să explice bine. În multe proiecte, problema nu este lipsa designului, ci lipsa unei ordini clare între mesaj, structură și execuție.',
-      'De aceea lucrăm compact, cu puține straturi între decizie și implementare. Preferăm discuțiile scurte, argumentele clare și paginile care susțin business-ul în mod real.',
+      'BBL Sites a apărut din nevoia de a construi site-uri care arată bine, dar mai ales explică bine. În multe proiecte, problema nu este lipsa designului, ci lipsa unei ordini clare între mesaj, structură și execuție.',
+      'Modelul de lucru rămâne compact, cu puține straturi între decizie și implementare. Accentul cade pe discuții clare, argumente solide și pagini care susțin business-ul în mod real.',
     ],
     values: [
       {

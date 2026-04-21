@@ -67,7 +67,7 @@ export default function Services() {
             <SectionHeading
               eyebrow="Moduri de colaborare"
               title="Intrăm în proiect în ritmul potrivit pentru stadiul în care vă aflați acum."
-              body="Am înlocuit CTA-urile de tip „coming soon” cu scenarii concrete de colaborare, mai ușor de înțeles și de discutat."
+              body="Alegem formatul de colaborare în funcție de claritatea de care aveți nevoie acum: sprint de strategie, redesign complet sau evoluție iterativă."
               className="max-w-[34rem]"
             />
 
@@ -88,7 +88,7 @@ export default function Services() {
             <SectionHeading
               eyebrow="Întrebări frecvente"
               title="Răspunsuri scurte pentru deciziile care apar aproape în fiecare proiect."
-              body="Secțiunea este completată acum cu răspunsuri reale, în locul interacțiunilor fără conținut util."
+              body="Mai jos sunt răspunsurile la întrebările care apar cel mai des despre ritm, livrabile și modul de colaborare."
               className="max-w-[32rem]"
             />
 

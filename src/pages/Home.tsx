@@ -132,7 +132,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Lucrări și direcții"
             title="Secțiuni care pot arăta premium, dar rămân utile și credibile în conversația comercială."
-            body="Am refăcut zona de proiecte astfel încât să susțină mai bine oferta, nu doar galeria de imagini."
+            body="Selectăm lucrări și direcții care susțin credibil oferta, clarifică nivelul execuției și ajută conversația comercială să meargă mai departe."
             className="max-w-[31rem]"
           />
 

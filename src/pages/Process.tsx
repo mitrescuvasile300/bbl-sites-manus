@@ -80,7 +80,7 @@ export default function Process() {
           <SectionHeading
             eyebrow="Ritmul colaborării"
             title="Cum păstrăm proiectul rapid fără să sacrificăm calitatea deciziilor."
-            body="Am înlocuit animațiile greoaie și secțiunile încărcate cu o structură mai clară, unde fiecare bloc explică o regulă de lucru importantă."
+            body="Procesul rămâne compact și clar: fiecare etapă are un rol precis, iar fiecare bloc explică o regulă de lucru importantă pentru deciziile care urmează."
             className="max-w-[33rem]"
           />
 
