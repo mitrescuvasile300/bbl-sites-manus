@@ -1,4 +1,11 @@
+/*
+  Design note — Footer.tsx
+  Filosofie: editorial cinematic tech. Footer-ul trebuie să închidă experiența cu claritate,
+  densitate controlată și linkuri reale, fără zone moarte sau placeholder-e decorative.
+*/
+
 import { Link } from 'react-router-dom';
+import { siteContent } from '@/lib/siteContent';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -6,101 +13,55 @@ export default function Footer() {
   };
 
   return (
-    <footer
-      className="w-full"
-      style={{
-        backgroundColor: 'var(--bg-primary)',
-        borderTop: '1px solid var(--border-subtle)',
-        paddingTop: '80px',
-        paddingBottom: '40px',
-      }}
-    >
-      <div
-        className="mx-auto"
-        style={{
-          maxWidth: '1400px',
-          padding: '0 clamp(24px, 5vw, 80px)',
-        }}
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          <div className="flex flex-col gap-4">
-            <Link to="/" className="flex items-center">
+    <footer className="border-t border-white/8 bg-[var(--bg-primary)]">
+      <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 xl:px-16">
+        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div className="flex max-w-md flex-col gap-5">
+            <Link to="/" className="flex items-center gap-3">
               <img
                 src="/logos/logo-1-premium.png"
-                alt="BBL SITES"
-                className="h-8 w-auto"
-                style={{ objectFit: 'contain' }}
+                alt={siteContent.brand.name}
+                className="h-10 w-auto object-contain"
               />
             </Link>
-            <p className="text-body text-text-secondary" style={{ fontSize: '0.9375rem', lineHeight: 1.6 }}>
-              Award-winning websites, interfaces and digital products. Built with obsessive craft.
+            <p className="text-base leading-7 text-[var(--text-secondary)]">
+              {siteContent.brand.shortDescription}
+            </p>
+            <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
+              Strategie. Design. Implementare.
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <h4 className="text-micro text-text-muted">Services</h4>
-            <div className="flex flex-col gap-3">
-              {['Web Design', 'Web Development', 'Branding', 'UI/UX Design', 'E-Commerce', 'SEO'].map((service) => (
-                <Link
-                  key={service}
-                  to="/services"
-                  className="text-sm text-text-muted hover:text-text-primary transition-colors duration-300"
-                >
-                  {service}
-                </Link>
-              ))}
+          {siteContent.footer.columns.map((column) => (
+            <div key={column.title} className="flex flex-col gap-4">
+              <h3 className="text-[0.72rem] uppercase tracking-[0.24em] text-[var(--text-muted)]">
+                {column.title}
+              </h3>
+              <div className="flex flex-col gap-3">
+                {column.links.map((link) => (
+                  <Link
+                    key={`${column.title}-${link.to}-${link.label}`}
+                    to={link.to}
+                    className="text-sm leading-6 text-[var(--text-secondary)] transition-colors duration-300 hover:text-[var(--text-primary)]"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <h4 className="text-micro text-text-muted">Company</h4>
-            <div className="flex flex-col gap-3">
-              {[
-                { label: 'About', to: '/about' },
-                { label: 'Process', to: '/process' },
-                { label: 'Contact', to: '/contact' },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="text-sm text-text-muted hover:text-text-primary transition-colors duration-300"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <h4 className="text-micro text-text-muted">Social</h4>
-            <div className="flex flex-col gap-3">
-              {['Twitter', 'LinkedIn', 'Dribbble', 'Instagram'].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="text-sm text-text-muted hover:text-text-primary transition-colors duration-300"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  {social}
-                </a>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div
-          className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-16 pt-6"
-          style={{ borderTop: '1px solid var(--border-subtle)' }}
-        >
-          <p className="text-micro text-text-muted">
-            &copy; {new Date().getFullYear()} BBL Sites. All rights reserved.
+        <div className="mt-16 flex flex-col gap-4 border-t border-white/8 pt-6 text-sm text-[var(--text-muted)] md:flex-row md:items-center md:justify-between">
+          <p>
+            © {new Date().getFullYear()} {siteContent.brand.name}. {siteContent.footer.copyright}
           </p>
           <button
+            type="button"
             onClick={scrollToTop}
-            className="text-micro text-text-muted hover:text-text-primary transition-colors duration-300 uppercase"
-            style={{ letterSpacing: '0.1em' }}
+            className="w-fit uppercase tracking-[0.2em] text-[var(--text-secondary)] transition-colors duration-300 hover:text-[var(--text-primary)]"
           >
-            Back to top &uarr;
+            {siteContent.footer.backToTop}
           </button>
         </div>
       </div>

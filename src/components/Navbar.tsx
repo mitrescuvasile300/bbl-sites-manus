@@ -1,5 +1,12 @@
-import { useState, useEffect } from 'react';
+/*
+  Design note — Navbar.tsx
+  Filosofie: editorial cinematic tech. Header-ul trebuie să fie precis, aerisit și discret,
+  cu accent pe orientare clară și un CTA care pare parte din sistem, nu un element strident.
+*/
+
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { siteContent } from '@/lib/siteContent';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -7,9 +14,8 @@ export default function Navbar() {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 24);
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -19,119 +25,110 @@ export default function Navbar() {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
   }, [mobileOpen]);
 
-  const navLinks = [
-    { label: 'Services', to: '/services' },
-    { label: 'Process', to: '/process' },
-    { label: 'About', to: '/about' },
-    { label: 'Contact', to: '/contact' },
-  ];
-
   return (
     <>
-      <nav
-        className="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+      <header
+        className="fixed inset-x-0 top-0 z-50 transition-all duration-500"
         style={{
-          height: '72px',
-          backgroundColor: scrolled ? 'rgba(3,2,15,0.8)' : 'rgba(3,2,15,0.4)',
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)',
-          borderBottom: '1px solid var(--border-subtle)',
+          background: scrolled ? 'rgba(6, 10, 18, 0.86)' : 'rgba(6, 10, 18, 0.38)',
+          backdropFilter: 'blur(18px)',
+          WebkitBackdropFilter: 'blur(18px)',
+          borderBottom: scrolled ? '1px solid rgba(168, 191, 255, 0.14)' : '1px solid transparent',
         }}
       >
-        <div className="flex items-center justify-between h-full mx-auto" style={{ maxWidth: '1400px', padding: '0 clamp(24px, 5vw, 80px)' }}>
-          <Link to="/" className="flex items-center shrink-0">
+        <div className="mx-auto flex h-[76px] max-w-[1400px] items-center justify-between px-6 md:px-10 xl:px-16">
+          <Link to="/" className="group flex items-center gap-3">
             <img
               src="/logos/logo-1-premium.png"
-              alt="BBL SITES"
-              className="h-8 w-auto"
-              style={{ objectFit: 'contain' }}
+              alt={siteContent.brand.name}
+              className="h-9 w-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
             />
+            <span className="hidden text-xs uppercase tracking-[0.28em] text-[var(--text-muted)] lg:inline-block">
+              website systems
+            </span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="text-nav text-text-primary hover:text-accent-light transition-colors duration-300"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              to="/contact"
-              className="btn-secondary"
-              style={{ padding: '12px 24px', fontSize: '0.75rem' }}
-            >
-              LET&apos;S TALK
+          <nav className="hidden items-center gap-8 md:flex">
+            {siteContent.navigation.links.map((link) => {
+              const isActive = location.pathname === link.to;
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className="text-[0.74rem] uppercase tracking-[0.22em] transition-colors duration-300"
+                  style={{ color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)' }}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="hidden md:block">
+            <Link to="/contact" className="btn-secondary !px-5 !py-3 !text-[0.72rem]">
+              {siteContent.navigation.primaryCta}
             </Link>
           </div>
 
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
+            type="button"
+            className="flex h-11 w-11 items-center justify-center border border-white/10 bg-white/5 md:hidden"
+            aria-label={mobileOpen ? 'Închide meniul' : 'Deschide meniul'}
+            onClick={() => setMobileOpen((value) => !value)}
           >
-            <span
-              className="block w-6 h-px bg-text-primary transition-transform duration-300"
-              style={{
-                transform: mobileOpen ? 'rotate(45deg) translateY(4px)' : 'none',
-              }}
-            />
-            <span
-              className="block w-6 h-px bg-text-primary transition-opacity duration-300"
-              style={{ opacity: mobileOpen ? 0 : 1 }}
-            />
-            <span
-              className="block w-6 h-px bg-text-primary transition-transform duration-300"
-              style={{
-                transform: mobileOpen ? 'rotate(-45deg) translateY(-4px)' : 'none',
-              }}
-            />
+            <span className="sr-only">Meniu</span>
+            <div className="relative h-4 w-5">
+              <span
+                className="absolute left-0 top-0 block h-px w-full bg-[var(--text-primary)] transition-all duration-300"
+                style={{ transform: mobileOpen ? 'translateY(7px) rotate(45deg)' : 'none' }}
+              />
+              <span
+                className="absolute left-0 top-1/2 block h-px w-full -translate-y-1/2 bg-[var(--text-primary)] transition-all duration-300"
+                style={{ opacity: mobileOpen ? 0 : 1 }}
+              />
+              <span
+                className="absolute bottom-0 left-0 block h-px w-full bg-[var(--text-primary)] transition-all duration-300"
+                style={{ transform: mobileOpen ? 'translateY(-7px) rotate(-45deg)' : 'none' }}
+              />
+            </div>
           </button>
         </div>
-      </nav>
+      </header>
 
-      {mobileOpen && (
-        <div
-          className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8"
-          style={{
-            backgroundColor: 'rgba(3,2,15,0.95)',
-            backdropFilter: 'blur(20px)',
-          }}
-        >
-          {navLinks.map((link, i) => (
+      <div
+        className={[
+          'fixed inset-0 z-40 flex flex-col justify-between bg-[rgba(6,10,18,0.96)] px-6 pb-10 pt-28 transition-all duration-500 md:hidden',
+          mobileOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
+        ].join(' ')}
+      >
+        <nav className="flex flex-col gap-5">
+          {siteContent.navigation.links.map((link, index) => (
             <Link
               key={link.to}
               to={link.to}
-              className="text-h2 text-text-primary hover:text-accent-light transition-colors duration-300"
-              style={{
-                animationDelay: `${i * 0.08}s`,
-              }}
-              onClick={() => setMobileOpen(false)}
+              className="border-b border-white/8 pb-4 text-[clamp(2rem,8vw,3.25rem)] leading-none tracking-[-0.03em] text-[var(--text-primary)]"
+              style={{ transitionDelay: `${index * 40}ms` }}
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            className="btn-primary mt-4"
-            onClick={() => setMobileOpen(false)}
-          >
-            LET&apos;S TALK
+        </nav>
+
+        <div className="flex flex-col gap-6">
+          <p className="max-w-xs text-sm leading-6 text-[var(--text-secondary)]">
+            Website-uri gândite ca instrumente de poziționare, nu doar ca suprafețe vizuale.
+          </p>
+          <Link to="/contact" className="btn-primary w-fit !px-6 !py-4 !text-[0.72rem]">
+            {siteContent.navigation.primaryCta}
           </Link>
         </div>
-      )}
+      </div>
     </>
   );
 }
