@@ -53,32 +53,45 @@ export default function Home() {
           </div>
 
           <div className="hero-stage" data-hero-stage>
-            <div className="hero-stage-grid">
-              <div className="hero-orbit hero-orbit-a" />
-              <div className="hero-orbit hero-orbit-b" />
-              <div className="hero-panel hero-panel-lead">
-                <span className="hero-panel-label">{hero.sideLabel}</span>
-                <p className="hero-panel-copy">
-                  Un website matur nu doar impresionează. El ordonează informația, stabilește ritmul și conduce vizitatorul către pasul următor.
-                </p>
-              </div>
+            <div className="hero-video-shell">
+              <video
+                className="hero-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/media/hero-dow-poster.jpg"
+                aria-hidden="true"
+              >
+                <source src="/media/hero-dow.mp4" type="video/mp4" />
+              </video>
 
-              <div className="hero-panel hero-panel-stack">
-                {hero.panels.map((panel) => (
-                  <div key={panel.value} className="hero-stack-item">
-                    <span className="hero-stack-value">{panel.value}</span>
-                    <p className="hero-stack-copy">{panel.label}</p>
-                  </div>
-                ))}
-              </div>
+              <div className="hero-video-overlay" />
 
-              <div className="hero-panel hero-panel-track">
-                <div className="flex items-center justify-between gap-4">
-                  <span className="hero-panel-label">{hero.scene.caption}</span>
-                  <span className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">Home</span>
+              <div className="hero-video-content">
+                <div className="hero-video-topline">
+                  <span className="hero-panel-label">{hero.sideLabel}</span>
+                  <span className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">Hero film</span>
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="hero-video-note">
+                  <span className="hero-panel-label">{hero.scene.caption}</span>
+                  <p className="hero-panel-copy hero-video-copy">
+                    Un fundal cinematic care lasă textul să respire și păstrează în cadru aceeași direcție premium, clară și controlată.
+                  </p>
+                </div>
+
+                <div className="hero-video-metrics">
+                  {hero.panels.map((panel) => (
+                    <div key={panel.value} className="hero-stack-item hero-video-metric">
+                      <span className="hero-stack-value">{panel.value}</span>
+                      <p className="hero-stack-copy">{panel.label}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 flex flex-wrap gap-3">
                   {hero.scene.checkpoints.map((checkpoint) => (
                     <span key={checkpoint} className="checkpoint-pill">
                       {checkpoint}
