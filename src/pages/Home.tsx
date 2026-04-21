@@ -112,6 +112,7 @@ export default function Home() {
             eyebrow="De ce funcționează"
             title="Structurăm experiența astfel încât vizitatorul să înțeleagă repede, să simtă diferența și să știe ce are de făcut mai departe."
             body="Fiecare secțiune are un rol precis: clarifică oferta, ridică încrederea sau mută conversația către contact."
+            className="max-w-[33rem]"
           />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -132,6 +133,7 @@ export default function Home() {
             eyebrow="Lucrări și direcții"
             title="Secțiuni care pot arăta premium, dar rămân utile și credibile în conversația comercială."
             body="Am refăcut zona de proiecte astfel încât să susțină mai bine oferta, nu doar galeria de imagini."
+            className="max-w-[31rem]"
           />
 
           <div className="mt-14 grid gap-8 lg:grid-cols-3">
@@ -158,6 +160,7 @@ export default function Home() {
               eyebrow={siteContent.home.processPreview.eyebrow}
               title={siteContent.home.processPreview.title}
               body={siteContent.home.processPreview.body}
+              className="max-w-[30rem]"
             />
 
             <div className="grid gap-5">
@@ -180,7 +183,7 @@ export default function Home() {
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
               <span className="section-eyebrow">Următorul pas</span>
-              <h2 className="mt-4 text-[clamp(2.6rem,6vw,5.75rem)] leading-[0.94] tracking-[-0.04em] text-[var(--text-primary)]">
+              <h2 className="cta-title mt-4">
                 {siteContent.home.closing.title}
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--text-secondary)] md:text-xl">

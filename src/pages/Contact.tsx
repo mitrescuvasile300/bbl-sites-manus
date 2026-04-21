@@ -111,6 +111,7 @@ export default function Contact() {
             eyebrow={siteContent.contact.hero.eyebrow}
             title={siteContent.contact.hero.title}
             body={siteContent.contact.hero.body}
+            className="max-w-[35rem]"
           />
         </div>
       </section>
@@ -135,6 +136,7 @@ export default function Contact() {
               eyebrow={siteContent.contact.form.title}
               title="Scrie contextul pe scurt. Noi îl transformăm într-o conversație structurată."
               body={siteContent.contact.form.description}
+              className="max-w-[30rem]"
             />
 
             <div className="form-panel" data-reveal="up">
@@ -256,6 +258,7 @@ export default function Contact() {
             <SectionHeading
               eyebrow="Întrebări utile înainte să ne scrii"
               title="Nu ai nevoie de un brief perfect. Ai nevoie doar de suficient context ca să pornim bine."
+              className="max-w-[29rem]"
             />
 
             <div className="grid gap-5">
@@ -275,7 +278,7 @@ export default function Contact() {
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
               <span className="section-eyebrow">Dacă vrei să te pregătești mai bine</span>
-              <h2 className="mt-4 text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.94] tracking-[-0.04em] text-[var(--text-primary)]">
+              <h2 className="cta-title mt-4">
                 Poți vedea mai întâi și felul în care structurăm proiectele, ca să știi exact ce urmează după prima conversație.
               </h2>
             </div>

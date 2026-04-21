@@ -26,6 +26,7 @@ export default function About() {
             eyebrow={siteContent.about.hero.eyebrow}
             title={siteContent.about.hero.title}
             body={siteContent.about.hero.body}
+            className="max-w-[34rem]"
           />
 
           <div className="about-hero-media" data-reveal="up">
@@ -40,6 +41,7 @@ export default function About() {
             <SectionHeading
               eyebrow="Poveste"
               title="Lucrăm compact, aproape de decizie și cu multă atenție pentru felul în care un site susține percepția unui business."
+              className="max-w-[31rem]"
             />
 
             <div className="grid gap-6">
@@ -67,6 +69,7 @@ export default function About() {
           <SectionHeading
             eyebrow="Principii"
             title="Trei reguli după care luăm deciziile mari și detaliile mici."
+            className="max-w-[30rem]"
           />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -87,6 +90,7 @@ export default function About() {
               eyebrow="Instrumentar"
               title="Tehnologii și sisteme pe care le folosim pentru a livra rapid, curat și repetabil."
               body="Stack-ul contează pentru că influențează viteza, flexibilitatea și felul în care site-ul poate fi extins după lansare."
+              className="max-w-[30rem]"
             />
 
             <div className="flex flex-wrap gap-3" data-reveal="up">
@@ -105,7 +109,7 @@ export default function About() {
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
               <span className="section-eyebrow">Ce urmează</span>
-              <h2 className="mt-4 text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.94] tracking-[-0.04em] text-[var(--text-primary)]">
+              <h2 className="cta-title mt-4">
                 Dacă tonul și felul nostru de lucru se potrivesc cu ce cauți, următorul pas este o discuție scurtă despre contextul proiectului tău.
               </h2>
             </div>

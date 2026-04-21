@@ -26,6 +26,7 @@ export default function Process() {
             eyebrow={siteContent.process.hero.eyebrow}
             title={siteContent.process.hero.title}
             body={siteContent.process.hero.body}
+            className="max-w-[35rem]"
           />
         </div>
       </section>
@@ -49,6 +50,7 @@ export default function Process() {
               eyebrow="Etape"
               title="Fiecare pas există ca să facă următorul pas mai simplu și mai bine argumentat."
               body="În loc să amestecăm simultan strategia, designul și implementarea, mutăm proiectul prin etape care produc claritate reală."
+              className="max-w-[31rem]"
             />
 
             <div className="grid gap-6">
@@ -79,6 +81,7 @@ export default function Process() {
             eyebrow="Ritmul colaborării"
             title="Cum păstrăm proiectul rapid fără să sacrificăm calitatea deciziilor."
             body="Am înlocuit animațiile greoaie și secțiunile încărcate cu o structură mai clară, unde fiecare bloc explică o regulă de lucru importantă."
+            className="max-w-[33rem]"
           />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -98,6 +101,7 @@ export default function Process() {
             <SectionHeading
               eyebrow="Întrebări care apar des"
               title="Mai puține necunoscute la început înseamnă mai puțină fricțiune pe parcurs."
+              className="max-w-[29rem]"
             />
 
             <div className="grid gap-5">
@@ -117,7 +121,7 @@ export default function Process() {
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
               <span className="section-eyebrow">Pornim simplu</span>
-              <h2 className="mt-4 text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.94] tracking-[-0.04em] text-[var(--text-primary)]">
+              <h2 className="cta-title mt-4">
                 Dacă vrei, putem începe cu o etapă scurtă de audit și structură, apoi decidem împreună cât de amplu trebuie să fie următorul pas.
               </h2>
             </div>

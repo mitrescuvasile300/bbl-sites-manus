@@ -136,9 +136,19 @@
   }
 
   .section-title {
-    font-size: clamp(2.6rem, 5.2vw, 5.8rem);
-    line-height: 0.95;
-    letter-spacing: -0.05em;
+    max-width: 16ch;
+    font-size: clamp(2rem, 3.45vw, 3.7rem);
+    line-height: 0.99;
+    letter-spacing: -0.042em;
+    color: var(--text-primary);
+    text-wrap: balance;
+  }
+
+  .cta-title {
+    max-width: 16ch;
+    font-size: clamp(2.1rem, 3.8vw, 4rem);
+    line-height: 0.99;
+    letter-spacing: -0.042em;
     color: var(--text-primary);
     text-wrap: balance;
   }
@@ -187,6 +197,22 @@
     letter-spacing: -0.07em;
     color: var(--text-primary);
     text-wrap: balance;
+  }
+
+  @media (max-width: 767px) {
+    .section-title {
+      max-width: 12ch;
+      font-size: clamp(1.8rem, 7.6vw, 2.85rem);
+      line-height: 1.01;
+      text-wrap: pretty;
+    }
+
+    .cta-title {
+      max-width: 13ch;
+      font-size: clamp(1.9rem, 8vw, 3.1rem);
+      line-height: 1.01;
+      text-wrap: pretty;
+    }
   }
 
   .hero-stage {

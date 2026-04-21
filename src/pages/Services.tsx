@@ -26,6 +26,7 @@ export default function Services() {
             eyebrow={siteContent.services.hero.eyebrow}
             title={siteContent.services.hero.title}
             body={siteContent.services.hero.body}
+            className="max-w-[36rem]"
           />
         </div>
       </section>
@@ -63,11 +64,12 @@ export default function Services() {
 
       <section className="section-shell bg-[var(--bg-secondary)]">
         <div className="content-frame py-24 md:py-32">
-          <SectionHeading
-            eyebrow="Moduri de colaborare"
-            title="Intrăm în proiect în ritmul potrivit pentru stadiul în care vă aflați acum."
-            body="Am înlocuit CTA-urile de tip „coming soon” cu scenarii concrete de colaborare, mai ușor de înțeles și de discutat."
-          />
+            <SectionHeading
+              eyebrow="Moduri de colaborare"
+              title="Intrăm în proiect în ritmul potrivit pentru stadiul în care vă aflați acum."
+              body="Am înlocuit CTA-urile de tip „coming soon” cu scenarii concrete de colaborare, mai ușor de înțeles și de discutat."
+              className="max-w-[34rem]"
+            />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {siteContent.services.engagementModels.map((item) => (
@@ -87,6 +89,7 @@ export default function Services() {
               eyebrow="Întrebări frecvente"
               title="Răspunsuri scurte pentru deciziile care apar aproape în fiecare proiect."
               body="Secțiunea este completată acum cu răspunsuri reale, în locul interacțiunilor fără conținut util."
+              className="max-w-[32rem]"
             />
 
             <div className="grid gap-5">
@@ -106,7 +109,7 @@ export default function Services() {
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
               <span className="section-eyebrow">Discuție inițială</span>
-              <h2 className="mt-4 text-[clamp(2.6rem,6vw,5.5rem)] leading-[0.94] tracking-[-0.04em] text-[var(--text-primary)]">
+              <h2 className="cta-title mt-4">
                 Dacă vrei, putem începe cu o analiză scurtă a site-ului actual și a paginilor care au nevoie cel mai urgent de claritate.
               </h2>
             </div>
