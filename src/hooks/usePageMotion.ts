@@ -88,6 +88,26 @@ export function usePageMotion(
         );
       });
 
+      const scaleItems = gsap.utils.toArray<HTMLElement>('[data-reveal="scale"]', scope);
+      scaleItems.forEach((item) => {
+        gsap.fromTo(
+          item,
+          { opacity: 0, scale: 0.92, y: 18 },
+          {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 0.95,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: item,
+              start: 'top 86%',
+              once: true,
+            },
+          }
+        );
+      });
+
       if (options.enableHeroScene) {
         const heroRoot = scope.querySelector<HTMLElement>('[data-hero-root]');
         const heroStage = scope.querySelector<HTMLElement>('[data-hero-stage]');

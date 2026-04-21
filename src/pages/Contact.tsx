@@ -8,6 +8,7 @@ import { useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Copy, Mail } from 'lucide-react';
 import Layout from '@/components/Layout';
+import EditorialGraphic from '@/components/EditorialGraphic';
 import SectionHeading from '@/components/SectionHeading';
 import { usePageMotion } from '@/hooks/usePageMotion';
 import { siteContent } from '@/lib/siteContent';
@@ -33,6 +34,35 @@ const initialState: FormState = {
   budget: '',
   message: '',
 };
+
+const contactHeroSupport = [
+  {
+    label: 'Potrivit pentru',
+    value: 'site nou, redesign, landing page sau magazin online care trebuie să genereze discuții mai bune.',
+  },
+  {
+    label: 'Ce ne trimiți',
+    value: 'câteva informații despre firmă, servicii, obiectiv și ce nu mai funcționează bine în site-ul actual.',
+  },
+  {
+    label: 'Ce primești',
+    value: 'o direcție clară despre ce tip de site are sens, ce pagini sunt prioritare și care este pasul următor.',
+  },
+] as const;
+
+const contactHeroGraphicMetrics = [
+  { value: '24h', label: 'Răspuns normal pentru primul pas' },
+  { value: 'Brief', label: 'Mesaj pregătit clar din formular' },
+  { value: 'Route', label: 'Direcție pentru tipul de site' },
+  { value: 'Next', label: 'Pașii următori explicați simplu' },
+] as const;
+
+const contactFormGraphicMetrics = [
+  { value: '01', label: 'Context despre firmă și servicii' },
+  { value: '02', label: 'Obiectivul noului site' },
+  { value: '03', label: 'Ce nu mai funcționează acum' },
+  { value: '04', label: 'Buget și pas următor' },
+] as const;
 
 export default function Contact() {
   const pageRef = useRef<HTMLDivElement>(null);
@@ -106,13 +136,40 @@ export default function Contact() {
     <Layout>
       <div ref={pageRef}>
       <section className="section-shell overflow-hidden bg-[linear-gradient(145deg,rgba(17,24,43,1)_0%,rgba(8,10,18,1)_58%,rgba(4,6,10,1)_100%)]">
-        <div className="content-frame py-20 md:py-24">
+        <div className="content-frame grid gap-8 py-20 md:py-24 lg:grid-cols-[0.92fr_0.68fr] lg:items-end lg:gap-12">
           <SectionHeading
             eyebrow={siteContent.contact.hero.eyebrow}
             title={siteContent.contact.hero.title}
             body={siteContent.contact.hero.body}
             className="max-w-[35rem]"
           />
+
+            <div className="grid gap-4 lg:pl-6">
+              <div className="mini-stat-card flex flex-col gap-4" data-reveal="up">
+                <span className="section-eyebrow !text-[0.66rem]">Ce clarificăm din prima</span>
+                <div className="grid gap-4">
+                  {contactHeroSupport.map((item) => (
+                    <div key={item.label} className="border-t border-white/8 pt-4 first:border-t-0 first:pt-0">
+                      <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--accent-light)]">{item.label}</p>
+                      <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)] md:text-[0.96rem]">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <EditorialGraphic
+                eyebrow="Start de conversație"
+                title="Formularul și primul răspuns trebuie să reducă fricțiunea, nu să o crească."
+                variant="contact"
+                metrics={contactHeroGraphicMetrics}
+                points={[
+                  'Clarificăm repede dacă ai nevoie de site nou, redesign sau landing page.',
+                  'Îți răspundem cu o direcție, nu doar cu un mesaj generic de primire.',
+                ]}
+                footer="Contactul devine începutul unui proces clar"
+              />
+            </div>
+
         </div>
       </section>
 
@@ -130,16 +187,31 @@ export default function Contact() {
       </section>
 
       <section className="section-shell">
-        <div className="content-frame py-24 md:py-32">
-          <div className="grid gap-12 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
-            <SectionHeading
-              eyebrow={siteContent.contact.form.title}
-              title="Scrie-ne contextul pe scurt, iar noi revenim cu un răspuns clar și următorii pași potriviți."
-              body={siteContent.contact.form.description}
-              className="max-w-[30rem]"
-            />
+          <div className="content-frame py-24 md:py-32">
+            <div className="grid gap-12 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
+              <div className="grid gap-4">
+                <SectionHeading
+                  eyebrow={siteContent.contact.form.title}
+                  title="Spune-ne pe scurt ce tip de site îți dorești, iar noi revenim cu o direcție clară și cu următorii pași."
+                  body={siteContent.contact.form.description}
+                  className="max-w-[30rem]"
+                />
 
-            <div className="form-panel" data-reveal="up">
+                <EditorialGraphic
+                  eyebrow="Ce ne ajută"
+                  title="Un brief bun înseamnă câteva informații clare despre business, obiectiv și blocajele actuale."
+                  variant="flow"
+                  metrics={contactFormGraphicMetrics}
+                  points={[
+                    'Nu trebuie să ai totul pregătit perfect ca să pornim discuția.',
+                    'Ne ajută cel mai mult claritatea, nu volumul mare de text.',
+                  ]}
+                  footer="Cu cât brief-ul e mai clar, cu atât direcția vine mai repede"
+                />
+              </div>
+
+              <div className="form-panel" data-reveal="up">
+
               <form className="grid gap-6" onSubmit={handleSubmit} noValidate>
                 <div className="grid gap-6 md:grid-cols-2">
                   <div className="form-field">
@@ -236,7 +308,7 @@ export default function Contact() {
                   </button>
 
                   <p className="text-sm leading-6 text-[var(--text-muted)]">
-                    La trimitere, pregătim automat un email cu brief-ul completat.
+                    La trimitere, pregătim automat un email cu toate informațiile completate.
                   </p>
                 </div>
               </form>
@@ -257,7 +329,7 @@ export default function Contact() {
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <SectionHeading
               eyebrow="Întrebări utile înainte să ne scrii"
-              title="Nu ai nevoie de un brief perfect. Ai nevoie doar de suficient context ca să pornim bine."
+              title="Nu trebuie să ai totul perfect pregătit. E suficient să ne spui clar cu ce se ocupă firma și ce vrei să obții."
               className="max-w-[29rem]"
             />
 
@@ -277,9 +349,9 @@ export default function Contact() {
         <div className="content-frame">
           <div className="cta-panel" data-reveal="up">
             <div className="max-w-3xl">
-              <span className="section-eyebrow">Dacă vrei să te pregătești mai bine</span>
+              <span className="section-eyebrow">Vezi și procesul</span>
               <h2 className="cta-title mt-4">
-                Poți vedea mai întâi și felul în care structurăm proiectele, ca să știi exact ce urmează după prima conversație.
+                Dacă vrei să știi cum lucrăm de la brief la lansare, poți vedea și pașii prin care construim fiecare proiect.
               </h2>
             </div>
 

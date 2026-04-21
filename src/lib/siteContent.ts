@@ -9,9 +9,9 @@ export const siteContent = {
   brand: {
     name: 'BBL Sites',
     shortDescription:
-      'Construim website-uri, interfețe și sisteme de prezentare care transformă interesul în conversații și cererile în oportunități reale.',
+      'Creăm site-uri de prezentare, landing page-uri și experiențe digitale care ajută firmele să inspire încredere și să obțină mai ușor cereri de ofertă.',
     positioning:
-      'Studio digital specializat în website-uri de prezentare, platforme de servicii și experiențe de brand cu accent pe claritate, viteză și execuție atentă.',
+      'BBL Sites este un studio digital care creează website-uri pentru companii, IMM-uri și business-uri de servicii care au nevoie de o prezență online clară, modernă și convingătoare.',
   },
   navigation: {
     primaryCta: 'Programează o discuție',
@@ -24,263 +24,301 @@ export const siteContent = {
   },
   home: {
     hero: {
-      eyebrow: 'Studio digital pentru branduri care vor să pară la fel de bine pe cât livrează',
-      title: ['Construim', 'prezențe digitale', 'care mișcă business-ul înainte'],
+      eyebrow: 'Site-uri de prezentare pentru firme care vor să inspire încredere din primul ecran',
+      title: ['Website-uri', 'profesioniste', 'care aduc cereri'],
       description:
-        'De la direcție creativă și structură de conținut până la design, prototipare și implementare, proiectăm site-uri care arată matur, se mișcă fluent și comunică limpede.',
+        'Pentru companii, IMM-uri și afaceri de servicii, construim website-uri clare, rapide și convingătoare — de la structură și design până la implementare și lansare.',
       primaryCta: { label: 'Vezi serviciile', to: '/services' },
-      secondaryCta: { label: 'Cum lucrăm', to: '/process' },
-      checkpoints: ['Poziționare', 'Structură', 'Identitate', 'Lansare'],
+      secondaryCta: { label: 'Solicită o discuție', to: '/contact' },
+      checkpoints: ['Strategie', 'Design', 'Implementare', 'Lansare'],
     },
     trust: {
-      eyebrow: 'Ce aducem în proiect',
-      items: ['Strategie', 'Design web', 'UI systems', 'Copy structure', 'Frontend performant', 'Optimizare conversie'],
+      eyebrow: 'Ce putem construi pentru tine',
+      items: ['Site de prezentare', 'Landing page', 'Redesign website', 'Magazin online', 'Design UI', 'Implementare frontend'],
     },
     highlights: [
       {
-        title: 'Arhitectură clară înainte de estetică',
-        body: 'Pornim cu structură, ierarhie și fluxuri. Înainte de orice animație sau ornament, paginile trebuie să spună clar ce oferi, cui și de ce contează.',
+        title: 'Mesaj clar pentru clienții potriviți',
+        body: 'Structurăm paginile astfel încât un potențial client să înțeleagă rapid ce oferi, cui te adresezi și de ce merită să te contacteze.',
       },
       {
-        title: 'Identitate digitală coerentă',
-        body: 'Aliniem tipografia, tonul, ritmul și detaliile vizuale astfel încât fiecare secțiune să pară parte din același sistem, nu din pagini lipite între ele.',
+        title: 'Design profesionist, adaptat business-ului',
+        body: 'Construim o imagine online coerentă, modernă și credibilă, astfel încât site-ul să susțină poziționarea firmei și să inspire încredere.',
       },
       {
-        title: 'Implementare gândită pentru iterație',
-        body: 'Construim componente reutilizabile și conținut ușor de actualizat, pentru ca site-ul să poată evolua fără refaceri costisitoare.',
+        title: 'Implementare curată și ușor de extins',
+        body: 'Livrăm un site rapid, responsive și bine organizat, astfel încât să poată fi actualizat, extins și folosit fără complicații după lansare.',
       },
     ],
     caseStudies: [
       {
-        title: 'Flux Systems',
+        title: 'Companii de servicii',
         image: '/cs-flux-thumb.jpg',
-        label: 'Website de poziționare B2B',
+        label: 'Site de prezentare',
         summary:
-          'Reașezare completă de mesaj, structură și ritm vizual pentru o companie tehnică ce avea nevoie de un website cu ton mai sigur și mai comercial.',
+          'Pentru firme de consultanță, construcții, logistică, producție sau servicii profesionale care trebuie să explice clar ce oferă și de ce merită alese.',
       },
       {
-        title: 'Spark News',
+        title: 'Clinici și business-uri locale',
         image: '/cs-sparknews-thumb.jpg',
-        label: 'Produs media digital',
+        label: 'Website orientat spre contact',
         summary:
-          'Layout modular, accent editorial și secvențe de citire mai rapide pentru un produs care trebuia să comunice mai bine atât conținutul, cât și produsul.',
+          'Pentru cabinete, clinici, saloane sau afaceri locale care au nevoie de încredere, informații clare și un traseu simplu către apel, formular sau programare.',
       },
       {
-        title: 'LMVR',
+        title: 'Magazine online și produse',
         image: '/cs-lmvr-thumb.jpg',
-        label: 'Platformă de prezentare pentru servicii premium',
+        label: 'E-commerce și pagini de vânzare',
         summary:
-          'Sistem de secțiuni full-width, dovadă socială mai bine integrată și un parcurs mai convingător de la ofertă către contact.',
+          'Pentru business-uri care vând produse și au nevoie de un magazin online clar, bine organizat și orientat spre încredere, coș și comandă.',
       },
     ],
     processPreview: {
       eyebrow: 'Cum lucrăm',
-      title: 'Mai puțină improvizație. Mai multă intenție.',
-      body: 'Procesul este construit pentru ritm și decizie. Clarificăm poziționarea, rafinăm mesajul și livrăm într-o ordine care reduce rework-ul.',
+      title: 'Un proces clar, de la idee la lansare.',
+      body: 'Lucrăm etapizat, astfel încât să știi ce se întâmplă, ce primești și cum ajungem de la brief la un site gata de publicare.',
       steps: [
         {
           number: '01',
-          title: 'Audit și direcție',
-          description: 'Mapăm oferta, publicul și blocajele curente. Stabilim axa vizuală și argumentul comercial central.',
+          title: 'Discuție și audit',
+          description: 'Înțelegem business-ul, oferta, publicul și problemele site-ului actual sau ale prezenței online existente.',
         },
         {
           number: '02',
-          title: 'Structură și conținut',
-          description: 'Organizăm paginile, secțiunile și mesajele-cheie astfel încât site-ul să fie clar înainte să fie spectaculos.',
+          title: 'Structură și design',
+          description: 'Organizăm conținutul, definim secțiunile importante și construim o direcție vizuală potrivită pentru firma ta.',
         },
         {
           number: '03',
-          title: 'Design și implementare',
-          description: 'Construim interfața, definim motion-ul și implementăm un frontend curat, pregătit pentru iterații și lansare.',
+          title: 'Implementare și lansare',
+          description: 'Dezvoltăm site-ul, îl optimizăm pentru toate ecranele și îl pregătim pentru publicare și utilizare reală.',
         },
       ],
     },
     closing: {
-      title: 'Dacă site-ul actual arată bine doar în screenshot-uri, nu și în conversațiile de vânzare, e momentul pentru o versiune mai matură.',
-      body: 'Clarificăm mesajul, ordonăm structura și construim o experiență care susține decizia, nu doar prima impresie.',
+      title: 'Dacă site-ul actual nu reflectă nivelul firmei tale, îl reconstruim mai clar, mai credibil și mai orientat spre contact.',
+      body: 'Pornim de la obiectivele tale, organizăm conținutul și construim un site care arată profesionist și susține cererile de ofertă.',
       primaryCta: { label: 'Vorbește cu noi', to: '/contact' },
     },
   },
   services: {
     hero: {
       eyebrow: 'Servicii',
-      title: 'Servicii gândite ca un sistem, nu ca o listă de livrabile fără legătură.',
-      body: 'Acoperim direcția strategică, arhitectura de conținut, designul interfeței și implementarea frontend pentru proiecte care trebuie să arate convingător și să funcționeze clar.',
+      title: 'Servicii complete pentru firme care au nevoie de un site clar, modern și convingător.',
+      body: 'De la structură și mesaj până la design și implementare, construim site-uri de prezentare, landing page-uri, redesign-uri și magazine online care ajută clientul să înțeleagă imediat ce oferi.',
     },
     items: [
       {
         number: '01',
-        title: 'Strategie de website',
-        intro: 'Clarificăm ce trebuie să comunice site-ul, în ce ordine și pentru cine.',
-        deliverables: ['Audit de poziționare', 'Arhitectură de informație', 'Sitemap și prioritizare de secțiuni', 'Mesaje-cheie pe pagină'],
+        title: 'Strategie și structură website',
+        intro: 'Stabilim ce trebuie să comunice site-ul, ce pagini sunt necesare și cum ghidăm vizitatorul spre contact sau cerere de ofertă.',
+        deliverables: ['Audit website existent', 'Structură pagini și secțiuni', 'Sitemap', 'Mesaje-cheie pentru fiecare pagină'],
       },
       {
         number: '02',
-        title: 'Design UX/UI',
-        intro: 'Transformăm structura într-o experiență coerentă, elegantă și ușor de parcurs.',
-        deliverables: ['Direcție vizuală', 'Wireframes și compoziții', 'Componente reutilizabile', 'Motion design pentru interacțiuni'],
+        title: 'Design UI pentru site',
+        intro: 'Transformăm structura într-un design profesionist, coerent și adaptat brandului, publicului și tipului de business.',
+        deliverables: ['Direcție vizuală', 'Wireframe-uri', 'Design pagini principale', 'Sistem de componente'],
       },
       {
         number: '03',
-        title: 'Implementare frontend',
-        intro: 'Construim interfața în React, cu accent pe performanță, adaptabilitate și mentenanță simplă.',
-        deliverables: ['Componente modulare', 'Animații calibrate', 'Responsive complet', 'Pregătire pentru publicare'],
+        title: 'Implementare website',
+        intro: 'Construim site-ul într-un mod curat și rapid, cu accent pe responsive, performanță și o experiență bună pe toate dispozitivele.',
+        deliverables: ['Dezvoltare pagini', 'Responsive complet', 'Integrare animații utile', 'Pregătire pentru lansare'],
       },
       {
         number: '04',
-        title: 'Optimizare de conversie',
-        intro: 'Ajustăm secțiunile și traseul de citire astfel încât vizitatorul să știe rapid ce are de făcut mai departe.',
-        deliverables: ['Ierarhie CTA', 'Secțiuni de dovadă socială', 'Clarificare ofertă', 'Curățare fricțiuni de contact'],
+        title: 'Magazine online și e-commerce',
+        intro: 'Pregătim experiențe de catalog, pagini de produs și fluxuri de cumpărare pentru business-uri care vând online și au nevoie de o prezentare profesionistă.',
+        deliverables: ['Structură catalog', 'Pagini de produs', 'Flux de checkout', 'Integrare funcționalități comerciale'],
+      },
+      {
+        number: '05',
+        title: 'Optimizare pentru conversii',
+        intro: 'Așezăm conținutul și apelurile la acțiune astfel încât vizitatorii să înțeleagă repede ce au de făcut mai departe.',
+        deliverables: ['CTA-uri mai clare', 'Structură de contact', 'Secțiuni de încredere', 'Reducerea punctelor de blocaj'],
+      },
+    ],
+    siteTypes: [
+      {
+        title: 'Site-uri de prezentare',
+        body: 'Pentru firme, IMM-uri și companii de servicii care vor să își prezinte clar oferta, echipa și diferențiatorii.',
+      },
+      {
+        title: 'Landing page-uri',
+        body: 'Pentru campanii, lansări, servicii noi sau pagini orientate spre o singură acțiune: contact, înscriere sau cerere de ofertă.',
+      },
+      {
+        title: 'Redesign-uri',
+        body: 'Pentru business-uri care au deja un site, dar vor o versiune mai modernă, mai clară și mai credibilă.',
+      },
+      {
+        title: 'Magazine online',
+        body: 'Pentru branduri și business-uri care vând produse și au nevoie de o experiență de cumpărare bine structurată.',
+      },
+    ],
+    businessTypes: [
+      {
+        title: 'Firme de servicii și B2B',
+        body: 'Consultanță, construcții, logistică, producție, software, financiar, juridic și alte domenii unde claritatea ofertei contează mult.',
+      },
+      {
+        title: 'IMM-uri și afaceri locale',
+        body: 'Clinici, cabinete, saloane, showroom-uri, agenții și business-uri locale care au nevoie de încredere și contact rapid.',
+      },
+      {
+        title: 'Branduri și magazine online',
+        body: 'Business-uri cu produse proprii, colecții sau campanii comerciale care au nevoie de pagini de vânzare și e-commerce bine prezentat.',
       },
     ],
     engagementModels: [
       {
-        title: 'Sprint de clarificare',
-        body: 'Potrivit când mesajul, structura sau prioritățile produsului nu sunt suficient de clare și trebuie stabilite înainte de design.',
+        title: 'Site nou de la zero',
+        body: 'Potrivit pentru firme care pornesc un business nou sau au nevoie de o prezență online construită corect de la început.',
       },
       {
-        title: 'Redesign complet',
-        body: 'Potrivit când site-ul actual nu mai susține nivelul business-ului sau când brandul a evoluat, dar experiența digitală a rămas în urmă.',
+        title: 'Redesign site existent',
+        body: 'Potrivit când site-ul actual arată învechit, comunică neclar sau nu mai reflectă nivelul real al companiei.',
       },
       {
-        title: 'Parteneriat iterativ',
-        body: 'Potrivit când ai deja o bază bună, dar vrei să continui cu landing pages, noi secțiuni, rafinări de motion și experimente controlate.',
+        title: 'Landing page sau extindere',
+        body: 'Potrivit pentru campanii, servicii noi, pagini de ofertă sau dezvoltare etapizată peste un site deja existent.',
       },
     ],
     faq: [
       {
         question: 'Lucrați doar pe design sau și pe implementare?',
-        answer: 'Putem intra punctual pe strategie și design, dar rezultatele cele mai bune apar când putem controla și implementarea frontend, pentru a păstra ritmul și coerența deciziilor.',
+        answer: 'Putem ajuta atât cu partea de structură și design, cât și cu implementarea completă a site-ului, în funcție de ce ai nevoie.',
       },
       {
         question: 'Puteți lucra peste un site existent?',
-        answer: 'Da. În unele cazuri are sens o optimizare etapizată a site-ului existent, iar în altele este mai eficient să reconstruim zonele-cheie pe un sistem nou. Alegerea depinde de structură, conținut și nivelul actual de complexitate.',
+        answer: 'Da. În funcție de starea actuală a site-ului, putem face un redesign, o restructurare a conținutului sau o reconstrucție completă.',
       },
       {
-        question: 'Ce primiți de la noi la început?',
-        answer: 'Ideal, avem nevoie de o imagine clară asupra ofertei, diferențiatorilor, exemplelor care vă plac și obiectivului principal al site-ului. Dacă acestea nu sunt încă bine articulate, le clarificăm împreună în faza de audit.',
+        question: 'Cu ce informații pornim la început?',
+        answer: 'Ideal, avem nevoie de o descriere clară a serviciilor, tipului de client vizat, obiectivelor și câtorva exemple de site-uri care îți plac.',
       },
     ],
   },
   process: {
     hero: {
       eyebrow: 'Proces',
-      title: 'Un proces clar face proiectul mai rapid, mai coerent și mai ușor de dus la lansare.',
-      body: 'Fiecare etapă pregătește deciziile următoare și păstrează proiectul într-un ritm predictibil, cu mai puține revizii sterile și mai multă claritate reală.',
+      title: 'Așa lucrăm când construim un site pentru o firmă sau un business în creștere.',
+      body: 'Procesul nostru este simplu și clar: înțelegem obiectivul, organizăm conținutul, construim designul și implementăm site-ul până la lansare.',
     },
     principles: [
-      'Pornim de la logică de business, nu de la efecte vizuale.',
-      'Validăm ierarhia informației înainte de a rafina suprafața.',
-      'Construim componente și reguli, nu pagini tratate izolat.',
-      'Motion-ul este folosit pentru orientare și accent, nu pentru distragere.',
+      'Începem cu obiectivele business-ului și publicul vizat.',
+      'Punem claritatea mesajului înaintea efectelor decorative.',
+      'Luăm deciziile pe etape, ca să evităm blocajele și refacerile inutile.',
+      'Folosim animația doar acolo unde ajută experiența, nu unde o încarcă.',
     ],
     phases: [
       {
         number: '01',
-        title: 'Audit și aliniere',
-        description: 'Revizuim oferta, țintele comerciale, materialele existente și punctele unde actualul site pierde claritate sau încredere.',
-        outputs: ['Interviu de kickoff', 'Audit de structură', 'Inventar de conținut', 'Direcție de poziționare'],
+        title: 'Discuție și audit',
+        description: 'Analizăm serviciile, obiectivele, publicul și site-ul actual, ca să înțelegem ce trebuie păstrat, clarificat sau schimbat.',
+        outputs: ['Discuție inițială', 'Audit website', 'Obiective și priorități', 'Direcție de lucru'],
       },
       {
         number: '02',
-        title: 'Arhitectură și conținut',
-        description: 'Organizăm fluxul de citire, definim ce intră în fiecare pagină și în ce succesiune trebuie să apară argumentele importante.',
-        outputs: ['Sitemap', 'Structură de pagină', 'Microcopy de secțiune', 'Plan de CTA-uri'],
+        title: 'Structură și conținut',
+        description: 'Definim paginile, secțiunile și ordinea informației astfel încât site-ul să fie ușor de urmărit și ușor de înțeles.',
+        outputs: ['Sitemap', 'Structură pagini', 'Copy de bază', 'Plan CTA'],
       },
       {
         number: '03',
-        title: 'Design vizual și motion',
-        description: 'Dezvoltăm direcția vizuală, compozițiile principale și o logică de animație care să accentueze ritmul și povestea fiecărei pagini.',
-        outputs: ['Direcție vizuală', 'Sistem de componente', 'Reguli de motion', 'Stări responsive'],
+        title: 'Design vizual',
+        description: 'Construim un aspect profesionist, modern și adaptat firmei tale, astfel încât site-ul să inspire încredere și claritate.',
+        outputs: ['Direcție vizuală', 'Design homepage', 'Componente vizuale', 'Reguli responsive'],
       },
       {
         number: '04',
         title: 'Implementare și lansare',
-        description: 'Traducem designul într-un frontend curat, optimizat și pregătit pentru publicare, cu verificări finale pentru detalii și consistență.',
-        outputs: ['Implementare React', 'QA vizual', 'Optimizări finale', 'Suport pentru publicare'],
+        description: 'Dezvoltăm site-ul, îl optimizăm pentru desktop și mobil și îl pregătim pentru publicare într-o formă curată și stabilă.',
+        outputs: ['Dezvoltare frontend', 'Verificare finală', 'Optimizări', 'Pregătire pentru publicare'],
       },
     ],
     rituals: [
       {
-        title: 'Revizuiri concentrate',
-        body: 'Preferăm runde scurte de feedback cu decizii clare, în locul documentelor lungi care amână alegerea reală.',
+        title: 'Feedback scurt și clar',
+        body: 'Preferăm feedback concret și decizii rapide, astfel încât proiectul să meargă înainte fără runde inutile de discuții.',
       },
       {
-        title: 'Dovadă înainte de ornament',
-        body: 'Secțiunile care trebuie să convingă sunt dezvoltate prioritar. Abia după aceea rafinăm detaliile de suprafață.',
+        title: 'Prioritate pentru paginile importante',
+        body: 'Începem cu homepage-ul și paginile care aduc contactele cele mai valoroase, apoi extindem restul site-ului.',
       },
       {
-        title: 'Lansare fără improvizații',
-        body: 'Intrăm în publicare doar după ce fluxurile principale și experiența pe ecrane diferite au fost verificate cu atenție.',
+        title: 'Lansare cu lucrurile în ordine',
+        body: 'Publicăm doar după ce verificăm conținutul, structura, afișarea pe mobil și traseele principale către contact.',
       },
     ],
     faq: [
       {
         question: 'Cât de implicată trebuie să fie echipa noastră?',
-        answer: 'Avem nevoie de disponibilitate la început pentru aliniere și apoi în punctele de decizie. Restul procesului este construit tocmai ca să vă economisească timp și context-switching.',
+        answer: 'Avem nevoie de implicare la început pentru brief și apoi în momentele importante de decizie. În rest, ținem procesul cât mai simplu pentru tine.',
       },
       {
         question: 'Putem lansa întâi o versiune mai scurtă?',
-        answer: 'Da. În multe proiecte are sens un nucleu de pagini esențiale lansat rapid, urmat de iterații pe conținut, pagini secundare și rafinări de motion.',
+        answer: 'Da. Putem începe cu un homepage și câteva pagini esențiale, apoi extindem site-ul în etape, în funcție de priorități.',
       },
     ],
   },
   about: {
     hero: {
       eyebrow: 'Despre BBL Sites',
-      title: 'Nu facem site-uri doar ca să umple ecranul. Le facem ca să clarifice valoarea.',
-      body: 'BBL Sites este un studio orientat spre website-uri de prezentare și experiențe digitale unde tonul, ierarhia și detaliul trebuie să transmită maturitate, nu doar tendințe de moment.',
+      title: 'Ajutăm firmele să aibă site-uri mai clare, mai credibile și mai bine aliniate cu nivelul lor real.',
+      body: 'BBL Sites este un studio digital concentrat pe website-uri de prezentare, landing page-uri și redesign-uri pentru companii care vor o imagine online profesionistă și ușor de înțeles.',
     },
     story: [
-      'BBL Sites a apărut din nevoia de a construi site-uri care arată bine, dar mai ales explică bine. În multe proiecte, problema nu este lipsa designului, ci lipsa unei ordini clare între mesaj, structură și execuție.',
-      'Modelul de lucru rămâne compact, cu puține straturi între decizie și implementare. Accentul cade pe discuții clare, argumente solide și pagini care susțin business-ul în mod real.',
+      'Am pornit dintr-o observație simplă: multe firme oferă servicii bune, dar site-ul lor nu reușește să explice clar valoarea, diferențele și motivele pentru care merită contactate.',
+      'De aceea construim site-uri care combină mesajul clar, designul profesionist și implementarea curată, astfel încât prezența online să susțină în mod real vânzarea și imaginea companiei.',
     ],
     values: [
       {
-        title: 'Claritate înainte de spectacol',
-        body: 'Un vizitator nu trebuie să admire un website fără să înțeleagă ce vinde. Forma există ca să întărească fondul.',
+        title: 'Claritate în mesaj',
+        body: 'Un site bun trebuie să explice rapid ce oferi, pentru cine lucrezi și de ce merită să fii ales.',
       },
       {
-        title: 'Rigoare în detalii',
-        body: 'Spațierea, tipografia, microcopy-ul și ritmul animațiilor sunt tratate ca un sistem. Nu lăsăm consistența la întâmplare.',
+        title: 'Design care inspiră încredere',
+        body: 'Lucrăm atent la ierarhie, spațiere, tipografie și detalii vizuale pentru ca fiecare pagină să arate profesionist și coerent.',
       },
       {
-        title: 'Execuție apropiată de decizie',
-        body: 'Păstrăm distanța scurtă între strategie, design și implementare, pentru a evita pierderea intenției pe parcurs.',
+        title: 'Execuție fără complicații inutile',
+        body: 'Păstrăm procesul clar, cu puțini pași, feedback aplicat și implementare bine organizată până la lansare.',
       },
     ],
-    toolkit: ['React', 'Vite', 'Tailwind', 'GSAP', 'Content systems', 'Design systems'],
+    toolkit: ['React', 'Vite', 'Tailwind', 'GSAP', 'Structură conținut', 'Sisteme UI', 'E-commerce flows'],
     stats: [
-      { value: '1', label: 'sistem coerent de design, nu pagini disparate' },
-      { value: '4', label: 'etape clare până la lansare' },
-      { value: '∞', label: 'atenție pentru micro-detaliile care schimbă percepția' },
+      { value: '1', label: 'obiectiv clar: un site care explică bine ce oferi' },
+      { value: '4', label: 'etape simple de la brief la lansare' },
+      { value: '100%', label: 'atenție la claritate, imagine și experiență' },
     ],
   },
   contact: {
     hero: {
       eyebrow: 'Contact',
-      title: 'Dacă ai un proiect, o relansare sau doar suspiciunea că site-ul actual nu mai ține pasul, hai să îl punem în ordine.',
-      body: 'Formularul de mai jos pregătește un brief compact pe care îl poți trimite rapid din clientul tău de email. Dacă preferi, putem porni și de la o descriere scurtă a contextului.',
+      title: 'Spune-ne ce tip de site ai nevoie și revenim cu o direcție clară pentru proiect.',
+      body: 'Poți trimite rapid contextul business-ului, serviciile tale și ce vrei să îmbunătățești. De aici pornim cu pașii potriviți pentru site-ul tău.',
     },
     cards: [
       {
         title: 'Tip de proiect',
-        body: 'Redesign, website nou, pagină de campanie, rafinare de poziționare sau iterare pe un produs deja lansat.',
+        body: 'Site nou, redesign, landing page, pagină de ofertă sau îmbunătățirea unui site existent.',
       },
       {
         title: 'Timp de răspuns',
-        body: 'Revenim, de regulă, în maximum o zi lucrătoare cu pașii următori și întrebările esențiale.',
+        body: 'În mod normal revenim în maximum o zi lucrătoare cu un răspuns și cu întrebările necesare pentru următorul pas.',
       },
       {
-        title: 'Format de colaborare',
-        body: 'Workshop inițial, sprint de structură, execuție completă sau parteneriat iterativ pentru extinderea site-ului.',
+        title: 'Cum putem colabora',
+        body: 'Putem porni cu un audit, cu design și structură sau direct cu dezvoltarea completă a site-ului.',
       },
     ],
     budgetOptions: ['Sub 2.000 €', '2.000 – 5.000 €', '5.000 – 10.000 €', 'Peste 10.000 €', 'Încă evaluăm'],
     form: {
-      title: 'Pregătește brief-ul',
+      title: 'Trimite-ne brief-ul',
       description:
-        'Scrie pe scurt contextul, obiectivul și ce vrei să se schimbe. Noi ne ocupăm de structurarea discuției mai departe.',
+        'Scrie pe scurt ce face firma ta, ce tip de site îți dorești și ce vrei să obții. Îți răspundem cu o direcție clară pentru următorii pași.',
       labels: {
         name: 'Nume',
         email: 'Email',
@@ -291,9 +329,9 @@ export const siteContent = {
       placeholders: {
         name: 'Cum te numești?',
         email: 'nume@companie.ro',
-        company: 'Numele brandului, dacă există',
+        company: 'Numele firmei sau al brandului',
         budget: 'Selectează un interval',
-        message: 'Ce trebuie să facă noul site mai bine decât cel actual?',
+        message: 'Ce servicii oferi și ce ar trebui să facă noul site mai bine?',
       },
       submit: 'Generează mesajul',
       success: 'Brief-ul a fost pregătit și copiat pentru trimitere.',
@@ -306,15 +344,15 @@ export const siteContent = {
     faq: [
       {
         question: 'Aveți nevoie de un brief foarte detaliat de la început?',
-        answer: 'Nu. Dacă avem contextul de business, publicul și obiectivul principal, putem ghida noi structura discuției.',
+        answer: 'Nu. Este suficient să înțelegem cu ce se ocupă firma, ce obiectiv ai pentru site și ce simți că nu funcționează bine acum.',
       },
       {
-        question: 'Puteți prelua și conținutul, nu doar designul?',
-        answer: 'Da, putem lucra și pe structură de conținut, microcopy și formulări pentru secțiunile esențiale, astfel încât pagina să comunice mai clar.',
+        question: 'Puteți ajuta și cu textele site-ului?',
+        answer: 'Da. Putem lucra și la structură, formulări și mesaje-cheie, astfel încât site-ul să fie mai clar pentru clienții tăi.',
       },
       {
-        question: 'Lucrați doar pentru branduri mari?',
-        answer: 'Nu. Proiectul potrivit nu este definit doar de dimensiune, ci de claritatea obiectivului și de disponibilitatea de a construi o experiență matură, nu doar „ceva frumos”.',
+        question: 'Lucrați doar pentru companii mari?',
+        answer: 'Nu. Lucrăm și cu IMM-uri, afaceri locale și firme de servicii care au nevoie de un site mai bun și de o prezență online mai credibilă.',
       },
     ],
   },
@@ -333,10 +371,10 @@ export const siteContent = {
       {
         title: 'Ce facem',
         links: [
-          { label: 'Strategie de website', to: '/services' },
-          { label: 'Design UX/UI', to: '/services' },
-          { label: 'Implementare frontend', to: '/services' },
-          { label: 'Optimizare conversie', to: '/services' },
+          { label: 'Site-uri de prezentare', to: '/services' },
+          { label: 'Landing page-uri', to: '/services' },
+          { label: 'Magazine online', to: '/services' },
+          { label: 'Optimizare pentru conversii', to: '/services' },
         ],
       },
       {
@@ -354,7 +392,7 @@ export const siteContent = {
   meta: {
     title: 'BBL Sites',
     description:
-      'BBL Sites construiește website-uri, interfețe și experiențe digitale clare, elegante și orientate spre conversie.',
+      'BBL Sites creează site-uri de prezentare, landing page-uri și experiențe digitale clare, moderne și orientate spre cereri de ofertă.',
   },
 } as const;
 
