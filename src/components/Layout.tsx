@@ -1,7 +1,7 @@
 /*
   Design note — Layout.tsx
-  Filosofie: editorial cinematic tech. Layout-ul global trebuie să fie calm și predictibil,
-  astfel încât motion-ul dintre secțiuni să se simtă intenționat, nu accidental sau conflictual.
+  Filosofie: Systems Atelier. Layout-ul global trebuie să fie calm, stabil și previzibil,
+  astfel încât fiecare pagină să pară parte din același sistem bine controlat.
 */
 
 import { useEffect, type ReactNode } from 'react';
@@ -21,9 +21,9 @@ export default function Layout({ children }: LayoutProps) {
   }, [location.pathname]);
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <div className="relative flex min-h-screen flex-col bg-[var(--bg)] text-[var(--ink)]">
       <Navbar />
-      <main className="flex-1 pt-[76px]">{children}</main>
+      <main className="flex-1 pt-[82px]">{children}</main>
       <Footer />
     </div>
   );

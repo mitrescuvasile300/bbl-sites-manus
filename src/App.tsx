@@ -1,7 +1,7 @@
 /*
   Design note — App.tsx
-  Filosofie: editorial cinematic tech. Structura aplicației trebuie să rămână suplă,
-  cu încărcare pe rute și tranziții curate între capitolele site-ului.
+  Filosofie: Systems Atelier. Structura aplicației trebuie să rămână suplă,
+  cu rute clare și tranziții curate între pagini, fără dramatizare inutilă.
 */
 
 import { Suspense, lazy } from 'react';
@@ -15,8 +15,8 @@ const Contact = lazy(() => import('./pages/Contact'));
 
 function PageLoader() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[var(--bg-primary)] px-6 text-center text-sm uppercase tracking-[0.24em] text-[var(--text-muted)]">
-      Se încarcă experiența…
+    <div className="flex min-h-screen items-center justify-center bg-[var(--bg)] px-6 text-center font-[var(--font-mono)] text-sm uppercase tracking-[0.24em] text-[var(--ink-muted)]">
+      Se încarcă pagina…
     </div>
   );
 }

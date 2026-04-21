@@ -1,7 +1,7 @@
 /*
   Design note — SectionHeading.tsx
-  Filosofie: editorial cinematic tech. Introducerile de secțiune trebuie să aibă ierarhie clară,
-  spațiu generos și o tensiune vizuală calmă între etichetă, titlu și textul explicativ.
+  Filosofie: Systems Atelier. Introducerile de secțiune trebuie să aibă ierarhie clară,
+  spațiu generos și ton matur, fără să pară supra-dramatizate.
 */
 
 interface SectionHeadingProps {
@@ -22,7 +22,7 @@ export default function SectionHeading({
   return (
     <div
       className={[
-        'flex max-w-[40rem] flex-col gap-5 md:gap-6',
+        'flex max-w-[42rem] flex-col gap-5 md:gap-6',
         align === 'center' ? 'mx-auto items-center text-center' : 'items-start text-left',
         className,
       ].join(' ')}
@@ -38,7 +38,7 @@ export default function SectionHeading({
       </h2>
 
       {body ? (
-        <p className="section-copy max-w-2xl text-base leading-7 text-[var(--text-secondary)] md:text-lg md:leading-8" data-reveal="up">
+        <p className="section-copy" data-reveal="up">
           {body}
         </p>
       ) : null}

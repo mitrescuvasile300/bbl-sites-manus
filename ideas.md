@@ -1,68 +1,74 @@
-<response>
-<probability>0.07</probability>
-<text>
-<idea>
-**Design Movement**: Editorial cinematic tech, inspirat din designul revistelor de arhitectură contemporană și interfețele de studio digital high-end.
-
-**Core Principles**: compoziții asimetrice cu ritm clar; contraste puternice între suprafețe dense și spații aerisite; tipografie mare, dar disciplinată; animații care susțin povestea, nu o acoperă.
-
-**Color Philosophy**: baza este aproape neagră, cu tonuri de grafit-albăstrui și accente electrice rare. Culoarea nu trebuie să facă spectacol permanent, ci să creeze tensiune și direcție vizuală, ca o lumină de studio într-un cadru întunecat.
-
-**Layout Paradigm**: panouri editoriale secvențiale, cu benzi laterale, zone sticky și tranziții între secțiuni care par capitole, nu blocuri standard de landing page.
-
-**Signature Elements**: linii verticale fine de ghidaj; numere de capitol mari și discrete; suprafețe translucide cu granulație subtilă.
-
-**Interaction Philosophy**: interacțiunile trebuie să pară precise și controlate, cu răspuns rapid și fără elasticitate excesivă.
-
-**Animation**: reveal-uri pe mască verticală, parallax foarte discret, timpi diferențiați între text și fundal, hero cu progres legat de scroll și tranziții de opacitate/scale calibrate cinematic.
-
-**Typography System**: Sora pentru titluri, cu greutăți 600-700 pentru ierarhie; Manrope pentru corp și UI; literele majuscule folosite doar pentru microcopy și etichete de navigație.
-</idea>
-</text>
-</response>
-
-<response>
-<probability>0.05</probability>
-<text>
-<idea>
-**Design Movement**: Neo-modern industrial minimalism, inspirat din wayfinding urban, sisteme de semnalistică și identități pentru produse enterprise premium.
-
-**Core Principles**: ordine vizuală severă; geometrie repetabilă; accent pe lizibilitate și structură; micro-detaliile dau rafinamentul.
-
-**Color Philosophy**: tonuri de beton, oțel cald și alb stins, sparte de un accent cobalt. Emoțional, paleta transmite claritate, încredere și capacitate de execuție.
-
-**Layout Paradigm**: layout pe coridoare orizontale și coloane utilitare, cu secțiuni care se deschid lateral și schimbă densitatea informației pe măsură ce utilizatorul avansează.
-
-**Signature Elements**: rigle de măsură, etichete tehnice, cadre subtile care delimitează informația fără să o închidă agresiv.
-
-**Interaction Philosophy**: hover-urile evidențiază sistemul și ierarhia, nu doar culoarea; fiecare click trebuie să confirme direcția printr-o schimbare clară de stare.
-
-**Animation**: glisări orizontale, panouri care se aliniază la scroll, fade-uri tăioase și foarte puține efecte decorative.
-
-**Typography System**: Space Grotesk pentru titluri și UI, IBM Plex Sans pentru corp; ritm tipografic strict, bazat pe scale mari între titluri și textul explicativ.
-</idea>
-</text>
-</response>
+# Brainstorm redesign BBL Sites — varianta 2
 
 <response>
 <probability>0.08</probability>
 <text>
-<idea>
-**Design Movement**: Digital atelier luxe, inspirat din brandingul caselor de modă contemporane și studiourile interactive care vând exclusivitate prin sobrietate.
+## Direcția 1 — Technical Editorial
 
-**Core Principles**: puține elemente, dar executate impecabil; ierarhie calmă; suprafețe tactile; senzația de produs custom, nu de șablon.
+**Design Movement:** editorial corporatist contemporan, inspirat din site-urile de consultanță tehnică și publicațiile de produs bine art-directionate.
 
-**Color Philosophy**: fundal espresso foarte închis, tonuri calde de fildeș și un accent prună-metalizat aplicat rar. Culoarea trebuie să sugereze încredere premium și finețe.
+**Core Principles:** claritate înainte de ornament, demonstrarea competenței prin structură și argument, contrast controlat între zone dense și zone calme, compoziții asimetrice care sugerează gândire de sistem.
 
-**Layout Paradigm**: alternanță între compoziții full-bleed și insule de conținut restrâns, cu mult spațiu negativ și ancore vizuale fixe.
+**Color Philosophy:** bază caldă, neutră, în tonuri de graphite, ivory murdar și albastru petrol foarte discret. Ideea nu este „tech flashy”, ci „technical confidence”. Accentele colorate apar rar și doar pentru a marca idei-cheie, valori de performanță sau blocuri de arhitectură.
 
-**Signature Elements**: rame subțiri aurii-desaturate; imagini crop-uite editorial; subtitluri cu tracking mare și contrast de greutate între titluri și corp.
+**Layout Paradigm:** layout de tip editorial split-frame, cu secțiuni care alternează între coloană de argument și coloană de dovadă. În locul gridului simetric clasic, paginile folosesc panouri laterale, margini ample și blocuri de conținut care par parte dintr-un document de strategie, nu dintr-un landing generic.
 
-**Interaction Philosophy**: interacțiunile trebuie să aibă o eleganță tăcută, cu accent pe continuitate și fluiditate.
+**Signature Elements:** diagrame liniare fine, carduri de capabilități cu aspect de fișă tehnică, benzi de proof cu metrici și principii de lucru.
 
-**Animation**: crossfade-uri lente, scalări foarte mici, text reveal pe linii și fundaluri care respiră lent, fără să pară gimmick-uri.
+**Interaction Philosophy:** interacțiunile trebuie să pară precise, nu decorative. Hover-urile subliniază structură, ordonare și ierarhie. Click-ul trebuie să lase impresia unui instrument bine făcut, nu a unei vitrine cu efecte.
 
-**Typography System**: Clash Display pentru titluri și Instrument Sans pentru corp; folosirea italicelor doar în accente narative scurte.
-</idea>
+**Animation:** reveal-uri scurte pe axă verticală, micro-parallax foarte subtil în fundaluri texturate, transitions lineare pentru panourile tehnice și animații de trasare pentru diagrame. Fără glow agresiv, fără mișcare ostentativă.
+
+**Typography System:** un display serif rafinat pentru titlurile mari, combinat cu un sans tehnic și foarte lizibil pentru corp și UI. Titlurile au greutate și ritm; conținutul tehnic are aliniere strictă și densitate controlată.
 </text>
 </response>
+
+<response>
+<probability>0.06</probability>
+<text>
+## Direcția 2 — Systems Atelier
+
+**Design Movement:** modern industrial soft, inspirat de interfețe de produs, documentație high-end și branding de studio digital matur.
+
+**Core Principles:** software thinking vizibil în fiecare secțiune, modulare clară, interfețe care explică procesul și capabilitățile în loc să le promită vag, echilibru între business clarity și craft vizual.
+
+**Color Philosophy:** fundaluri deschise, minerale, cu tonuri de stone, graphite desaturat și accente de cobalt sau verde tehnic. Atmosfera trebuie să spună „curat, competent, scalabil”, nu „futurist”.
+
+**Layout Paradigm:** pagini construite ca o combinație între portofoliu de studio și handbook de implementare. Blocurile mari de prezentare alternează cu panouri de sistem, checklist-uri vizuale, framework-uri și secțiuni de capabilități tehnice.
+
+**Signature Elements:** module de arhitectură, stack ribbons, blocuri de logică produs, piese grafice inspirate din wireframes și structuri de componente.
+
+**Interaction Philosophy:** fiecare element interactiv trebuie să sugereze robustețe și claritate operațională. Butoanele și linkurile au comportament sobru, hotărât, cu feedback rapid și curat.
+
+**Animation:** animații de tip stagger pentru liste de capabilități, sweep-uri line pe separatoare, state changes discrete în carduri și mișcări mici pe ilustrațiile de sistem. Totul trebuie să pară calibrat, aproape ingineresc.
+
+**Typography System:** un sans neo-grotesk bine desenat pentru interfață și un mono subtil sau semimono pentru metadate, etichete tehnice și indicatori de proces. Ierarhia tipografică scoate în evidență expertiza și disciplina.
+</text>
+</response>
+
+<response>
+<probability>0.04</probability>
+<text>
+## Direcția 3 — Product Casebook
+
+**Design Movement:** portofoliu de consultant-produs cu influențe de magazine editoriale și study case layouts.
+
+**Core Principles:** demonstrație prin exemple și logică, accent pe cum gândești și implementezi, vizibilitate pentru calitatea execuției, poveste de business spusă prin mecanisme tehnice clare.
+
+**Color Philosophy:** fundal aproape alb sau crem rece, text în tonuri de graphite, accente de burgundy prăfuit sau navy matur pentru zonele premium. Emoția trebuie să fie de precizie și rafinament calm.
+
+**Layout Paradigm:** long-form storytelling cu secțiuni mari, respirate, întrerupte de panouri de studiu, before/after logic, sisteme de decizie și zone care explică de ce un site bun este și un produs bun. Asimetria vine din blocuri decupate și panouri care ies parțial din coloană.
+
+**Signature Elements:** timeline-uri curatoriale, panouri „ce se vede / ce ține site-ul în picioare”, mini-studii vizuale, fragmente de pseudo-documentație.
+
+**Interaction Philosophy:** utilizatorul trebuie să simtă că parcurge un argument profesionist, nu o reclamă. Interacțiunile susțin lectura, compararea și orientarea.
+
+**Animation:** animații lente, elegante, orientate spre layering și reveal de conținut; separatoarele și studiile de caz apar în cascadă fină. Fără agresivitate, fără mișcări de joc video.
+
+**Typography System:** serif expresiv pentru declarațiile mari și un sans umanist foarte lizibil pentru restul conținutului. Etichetele și datele tehnice pot folosi o familie mono discretă pentru contrast de registru.
+</text>
+</response>
+
+## Direcție aleasă
+
+Aleg **Direcția 2 — Systems Atelier**. Este cea mai potrivită pentru un site care trebuie să pară matur, credibil și orientat spre skillurile de programator, fără să cadă nici în futurism gratuit, nici în corporatism inert. Noua versiune va trata site-ul ca pe o demonstrație de gândire de produs, capabilitate tehnică și implementare curată.
