@@ -24,8 +24,24 @@ export default function Home() {
     <Layout>
       <div ref={pageRef}>
       <section className="home-hero section-shell overflow-hidden" data-hero-root>
-        <div className="content-frame grid gap-16 py-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:py-20">
-          <div className="flex flex-col gap-8" data-hero-copy>
+        <div className="hero-stage" data-hero-stage aria-hidden="true">
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/media/hero-dow-poster.jpg"
+          >
+            <source src="/media/hero-dow.mp4" type="video/mp4" />
+          </video>
+
+          <div className="hero-video-overlay" />
+        </div>
+
+        <div className="content-frame relative z-[1] py-14 md:py-20 lg:py-24">
+          <div className="hero-copy-shell flex max-w-[48rem] flex-col gap-8" data-hero-copy>
             <span className="section-eyebrow max-w-md" data-reveal="fade">
               {hero.eyebrow}
             </span>
@@ -50,55 +66,13 @@ export default function Home() {
                 {hero.secondaryCta.label}
               </Link>
             </div>
-          </div>
 
-          <div className="hero-stage" data-hero-stage>
-            <div className="hero-video-shell">
-              <video
-                className="hero-video"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                poster="/media/hero-dow-poster.jpg"
-                aria-hidden="true"
-              >
-                <source src="/media/hero-dow.mp4" type="video/mp4" />
-              </video>
-
-              <div className="hero-video-overlay" />
-
-              <div className="hero-video-content">
-                <div className="hero-video-topline">
-                  <span className="hero-panel-label">{hero.sideLabel}</span>
-                  <span className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">Hero film</span>
-                </div>
-
-                <div className="hero-video-note">
-                  <span className="hero-panel-label">{hero.scene.caption}</span>
-                  <p className="hero-panel-copy hero-video-copy">
-                    Un fundal cinematic care lasă textul să respire și păstrează în cadru aceeași direcție premium, clară și controlată.
-                  </p>
-                </div>
-
-                <div className="hero-video-metrics">
-                  {hero.panels.map((panel) => (
-                    <div key={panel.value} className="hero-stack-item hero-video-metric">
-                      <span className="hero-stack-value">{panel.value}</span>
-                      <p className="hero-stack-copy">{panel.label}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-6 flex flex-wrap gap-3">
-                  {hero.scene.checkpoints.map((checkpoint) => (
-                    <span key={checkpoint} className="checkpoint-pill">
-                      {checkpoint}
-                    </span>
-                  ))}
-                </div>
-              </div>
+            <div className="mt-4 flex flex-wrap gap-3" data-reveal="up">
+              {hero.checkpoints.map((checkpoint) => (
+                <span key={checkpoint} className="checkpoint-pill">
+                  {checkpoint}
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -124,7 +98,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="De ce funcționează"
             title="Structurăm experiența astfel încât vizitatorul să înțeleagă repede, să simtă diferența și să știe ce are de făcut mai departe."
-            body="Fiecare secțiune are un rol precis: clarifică oferta, ridică încrederea sau mută conversația către contact."
+            body="De la primul ecran până la contact, fiecare secțiune susține claritatea ofertei, încrederea și următorul pas firesc în conversație."
             className="max-w-[33rem]"
           />
 

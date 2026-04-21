@@ -48,8 +48,8 @@ export default function Process() {
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <SectionHeading
               eyebrow="Etape"
-              title="Fiecare pas există ca să facă următorul pas mai simplu și mai bine argumentat."
-              body="În loc să amestecăm simultan strategia, designul și implementarea, mutăm proiectul prin etape care produc claritate reală."
+              title="Fiecare pas pregătește decizii mai bune și un drum mai clar către lansare."
+              body="Separăm strategia, designul și implementarea în etape care reduc ambiguitatea și păstrează proiectul ușor de urmărit."
               className="max-w-[31rem]"
             />
 
@@ -77,12 +77,12 @@ export default function Process() {
 
       <section className="section-shell bg-[var(--bg-secondary)]">
         <div className="content-frame py-24 md:py-32">
-          <SectionHeading
-            eyebrow="Ritmul colaborării"
-            title="Cum păstrăm proiectul rapid fără să sacrificăm calitatea deciziilor."
-            body="Procesul rămâne compact și clar: fiecare etapă are un rol precis, iar fiecare bloc explică o regulă de lucru importantă pentru deciziile care urmează."
-            className="max-w-[33rem]"
-          />
+            <SectionHeading
+              eyebrow="Ritmul colaborării"
+              title="Cum păstrăm proiectul rapid fără să sacrificăm calitatea deciziilor."
+              body="Păstrăm colaborarea compactă, cu repere clare și momente de decizie bine așezate, astfel încât proiectul să avanseze fără confuzie."
+              className="max-w-[33rem]"
+            />
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {siteContent.process.rituals.map((item) => (

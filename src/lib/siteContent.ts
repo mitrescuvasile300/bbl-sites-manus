@@ -24,31 +24,13 @@ export const siteContent = {
   },
   home: {
     hero: {
-      eyebrow: 'Studio digital pentru branduri care vor să pară la fel de bune pe cât livrează',
+      eyebrow: 'Studio digital pentru branduri care vor să pară la fel de bine pe cât livrează',
       title: ['Construim', 'prezențe digitale', 'care mișcă business-ul înainte'],
       description:
-        'De la direcție creativă și structură de conținut, până la design, prototipare și implementare, proiectăm site-uri care arată matur, se mișcă fluent și comunică limpede.',
+        'De la direcție creativă și structură de conținut până la design, prototipare și implementare, proiectăm site-uri care arată matur, se mișcă fluent și comunică limpede.',
       primaryCta: { label: 'Vezi serviciile', to: '/services' },
       secondaryCta: { label: 'Cum lucrăm', to: '/process' },
-      sideLabel: 'Cadru de lucru',
-      panels: [
-        {
-          value: '03',
-          label: 'săptămâni pentru un sprint de structură și direcție vizuală',
-        },
-        {
-          value: '01',
-          label: 'echipă compactă, cu decizii rapide și execuție fără straturi inutile',
-        },
-        {
-          value: '100%',
-          label: 'focus pe claritate comercială, nu doar pe efect vizual',
-        },
-      ],
-      scene: {
-        caption: 'Scroll pentru a activa secvența',
-        checkpoints: ['Poziționare', 'Structură', 'Identitate', 'Lansare'],
-      },
+      checkpoints: ['Poziționare', 'Structură', 'Identitate', 'Lansare'],
     },
     trust: {
       eyebrow: 'Ce aducem în proiect',
@@ -94,7 +76,7 @@ export const siteContent = {
     processPreview: {
       eyebrow: 'Cum lucrăm',
       title: 'Mai puțină improvizație. Mai multă intenție.',
-      body: 'Procesul este construit pentru ritm și decizie. Nu mutăm doar blocuri prin pagină, ci clarificăm poziționarea, rafinăm mesajul și livrăm într-o ordine care reduce rework-ul.',
+      body: 'Procesul este construit pentru ritm și decizie. Clarificăm poziționarea, rafinăm mesajul și livrăm într-o ordine care reduce rework-ul.',
       steps: [
         {
           number: '01',
@@ -183,8 +165,8 @@ export const siteContent = {
   process: {
     hero: {
       eyebrow: 'Proces',
-      title: 'Procesul nostru există ca să reducă haosul, nu să-l cosmetizeze.',
-      body: 'Fiecare etapă produce claritate pentru etapa următoare. Asta înseamnă mai puține revizii sterile, mai puține discuții abstracte și un parcurs mai predictibil până la lansare.',
+      title: 'Un proces clar face proiectul mai rapid, mai coerent și mai ușor de dus la lansare.',
+      body: 'Fiecare etapă pregătește deciziile următoare și păstrează proiectul într-un ritm predictibil, cu mai puține revizii sterile și mai multă claritate reală.',
     },
     principles: [
       'Pornim de la logică de business, nu de la efecte vizuale.',

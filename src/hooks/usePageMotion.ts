@@ -93,9 +93,9 @@ export function usePageMotion(
         const heroStage = scope.querySelector<HTMLElement>('[data-hero-stage]');
         const heroContent = scope.querySelector<HTMLElement>('[data-hero-copy]');
         const heroTitles = gsap.utils.toArray<HTMLElement>('.hero-title', scope);
-        const heroPanels = gsap.utils.toArray<HTMLElement>('.hero-panel', scope);
-        const orbitA = scope.querySelector<HTMLElement>('.hero-orbit-a');
-        const orbitB = scope.querySelector<HTMLElement>('.hero-orbit-b');
+        const heroCheckpoints = gsap.utils.toArray<HTMLElement>('.checkpoint-pill', scope).slice(0, 4);
+        const heroVideo = scope.querySelector<HTMLElement>('.hero-video');
+        const heroOverlay = scope.querySelector<HTMLElement>('.hero-video-overlay');
 
         if (heroRoot && heroStage && heroTitles.length) {
           const heroTimeline = gsap.timeline({
@@ -114,8 +114,8 @@ export function usePageMotion(
             .to(
               heroTitles,
               {
-                yPercent: -16,
-                opacity: 0.32,
+                yPercent: -12,
+                opacity: 0.38,
                 stagger: 0.05,
               },
               0
@@ -123,42 +123,39 @@ export function usePageMotion(
             .to(
               heroContent,
               {
-                yPercent: -10,
-                opacity: 0.36,
+                yPercent: -8,
+                opacity: 0.54,
               },
               0
             )
             .to(
               heroStage,
               {
-                yPercent: -8,
-                scale: 0.93,
-                rotate: -2,
+                scale: 1.06,
+                yPercent: -4,
               },
               0
             )
             .to(
-              heroPanels,
+              heroVideo,
               {
-                y: (index) => (index % 2 === 0 ? -56 : 52),
-                rotate: (index) => (index === 0 ? -1.5 : index === 1 ? 2.2 : -2.8),
-                stagger: 0.04,
+                scale: 1.12,
               },
               0
             )
             .to(
-              orbitA,
+              heroOverlay,
               {
-                scale: 1.18,
-                opacity: 0.22,
+                opacity: 0.88,
               },
               0
             )
             .to(
-              orbitB,
+              heroCheckpoints,
               {
-                scale: 0.82,
+                yPercent: 18,
                 opacity: 0.2,
+                stagger: 0.03,
               },
               0
             );

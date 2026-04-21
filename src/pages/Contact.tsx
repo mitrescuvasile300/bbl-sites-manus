@@ -134,7 +134,7 @@ export default function Contact() {
           <div className="grid gap-12 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
             <SectionHeading
               eyebrow={siteContent.contact.form.title}
-              title="Scrie contextul pe scurt. Noi îl transformăm într-o conversație structurată."
+              title="Scrie-ne contextul pe scurt, iar noi revenim cu un răspuns clar și următorii pași potriviți."
               body={siteContent.contact.form.description}
               className="max-w-[30rem]"
             />
